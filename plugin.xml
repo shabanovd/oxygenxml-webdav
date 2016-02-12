@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The plugin.dtd file is located in the OXYGEN_INSATALL_DIR/plugins directory -->
+<!DOCTYPE plugin SYSTEM "../plugin.dtd">
+
+<plugin
+ id="animo.oxygenxml.webdav"
+ name="oXygen XML WEBDAV"
+ description=""
+ version="${project.version}"
+ vendor="Dmitriy Shabanov"
+ class="animo.oxygenxml.webdav.Plugin"
+ classLoaderType="preferReferencedResources">
+
+ <runtime>
+  <library name="lib/oxygenxml-webdav-0.1.jar"/>
+ </runtime>
+
+  <extension type="URLHandler"
+             class="animo.oxygenxml.webdav.URLHandler"/>
+
+
+  <extension type="WorkspaceAccess"
+            class="animo.oxygenxml.webdav.WorkspaceExtension"/>
+
+</plugin>
