@@ -3,6 +3,7 @@ package animo.oxygenxml.mac;
 import animo.oxygenxml.webdav.WorkspaceExtension;
 import com.apple.eawt.AppEvent;
 
+import java.io.File;
 import java.net.MalformedURLException;
 
 /**
@@ -27,12 +28,12 @@ public class OpenURIHandler implements com.apple.eawt.OpenURIHandler, com.apple.
 
     @Override
     public void openFiles(AppEvent.OpenFilesEvent openFilesEvent) {
-        openFilesEvent.getFiles().forEach(file -> {
+        for (File file : openFilesEvent.getFiles()) {
             try {
                 WorkspaceExtension.openWhenReady(file.toURI().toURL());
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        });
+        }
     }
 }

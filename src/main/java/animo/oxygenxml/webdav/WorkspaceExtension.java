@@ -30,14 +30,17 @@ public class WorkspaceExtension implements WorkspaceAccessPluginExtension {
         WorkspaceExtension.ws = ws;
 
         //workaround
-        delayThread = new Thread(() -> {
-            try {
-                Thread.sleep(1000);
-                doOpen();
-            } catch (InterruptedException e) {
-                //ignore
-            } finally {
-                delayThread = null;
+        delayThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                    doOpen();
+                } catch (InterruptedException e) {
+                    //ignore
+                } finally {
+                    delayThread = null;
+                }
             }
         });
         delayThread.setDaemon(true);
