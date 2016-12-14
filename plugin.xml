@@ -12,7 +12,7 @@
  classLoaderType="preferReferencedResources">
 
  <runtime>
-  <library name="lib/oxygenxml-webdav-0.2.2.jar"/>
+  <library name="lib/oxygenxml-webdav-0.2.5.jar"/>
  </runtime>
 
   <extension type="URLHandler"
