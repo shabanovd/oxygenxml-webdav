@@ -1,15 +1,13 @@
 # oxygenxml-webdav
 
-Step 1 - Install plugin
+A plugin for oXygen XML Editor and scripts for Mac and Windows to register oXygen as a protocol handler for WebDAV links (`webdav://` and `webdavs://`). 
 
-Unzip to oXygen pluing folder.
+## Installation
 
-Step 2 - Run installation script
-
-Open terminal, run `cd /Applications/oXygen/pluging/webdav/bin` and then `./setup_osx_webdav.sh`
-
-Step 3 – Make finder aware of our app
-
-This step is very counter-intuitive but locate your `oXygen` folder at `Application` and move it to another folder, perhaps your home folder and back. Moving the file will let Finder re-read the Info.plist file and register it as a protocol handler.
-
-Step 4 - Try it in your browser
+1. Download the [latest release](https://github.com/shabanovd/oxygenxml-webdav/releases).
+2. Unzip the release and copy the resulting `webdav` directory into oXygen's `plugins` folder.
+3. Run installation script
+    - On Mac, open Terminal, run `cd /Applications/oXygen/plugins/webdav/bin` and then `./setup_osx_webdav.sh`
+4. (Mac only) Make Finder aware of app
+    - This step is very counter-intuitive, but locate the `oXygen` folder in `/Applications`, and move it to another folder, say, your home folder, and back again to `/Applications`. Moving the file will cause the Finder to re-read the application's `Info.plist` file and thus register it as a protocol handler.
+5. Try entering a WebDAV link in your browser. It should open in oXygen.
