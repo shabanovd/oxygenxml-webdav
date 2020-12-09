@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\webdav]
+@="URL:WebDAVs Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\webdav\DefaultIcon]
+@="c:\\Program Files\\Oxygen XML Editor 23\\oxygenAuthor23.0.exe,0”
+
+[HKEY_CLASSES_ROOT\webdav\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\webdav\shell\open]
+
+[HKEY_CLASSES_ROOT\webdav\shell\open\command]
+@="\"c:\\Program Files\\Oxygen XML Editor 23\\oxygen23.0.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\webdavs]
+@="URL:WebDAVs Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\webdavs\DefaultIcon]
+@="c:\\Program Files\\Oxygen XML Editor 23\\oxygenAuthor23.0.exe,0”
+
+[HKEY_CLASSES_ROOT\webdavs\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\webdavs\shell\open]
+
+[HKEY_CLASSES_ROOT\webdavs\shell\open\command]
+@="\"c:\\Program Files\\Oxygen XML Editor 23\\oxygen23.0.exe\" \"%1\""
